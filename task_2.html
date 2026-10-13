@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Conference Registration Form</title>
+</head>
+
+<body>
+    <h1>Conference Registration Form</h1>
+
+    <form>
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" min="18" max="99" value="18" required>
+
+        <p>Gender:</p>
+        <label>
+            <input type="radio" name="gender" value="male">
+            Male
+        </label><br>
+        <label>
+            <input type="radio" name="gender" value="female">
+            Female
+        </label>
+
+        <p>
+            <label for="country">Country of Residence:</label><br>
+            <select id="country" name="country">
+                <option value="Malaysia">Malaysia</option>
+                <option value="Somalia">Somalia</option>
+                <option value="Saudi Arabia">Saudi Arabia</option>
+                <option value="Other">Other</option>
+            </select>
+        </p>
+
+        <p>Areas of Interest:</p>
+        <label>
+            <input type="checkbox" name="interest" value="software-development">
+            Software Development
+        </label><br>
+        <label>
+            <input type="checkbox" name="interest" value="data-science">
+            Data Science
+        </label><br>
+        <label>
+            <input type="checkbox" name="interest" value="cybersecurity">
+            Cybersecurity
+        </label><br>
+        <label>
+            <input type="checkbox" name="interest" value="artificial-intelligence">
+            Artificial Intelligence
+        </label>
+
+        <p>Experience Level:</p>
+        <label>
+            <input type="radio" name="experience" value="beginner">
+            Beginner
+        </label><br>
+        <label>
+            <input type="radio" name="experience" value="intermediate">
+            Intermediate
+        </label><br>
+        <label>
+            <input type="radio" name="experience" value="advanced">
+            Advanced
+        </label>
+
+        <p>
+            <label for="comments">Comments or Questions:</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="50"
+                placeholder="Any comments or questions?"></textarea>
+        </p>
+
+        <button type="submit">Register</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+
+</html>
